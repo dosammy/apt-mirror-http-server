@@ -14,16 +14,22 @@ set _tilde 0
 #
 ############# end config ##############
 
-deb http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
-#deb http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
-#deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+## 21.10
+deb http://de.archive.ubuntu.com/ubuntu impish main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu impish-updates main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu impish-security main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu impish-backports main restricted universe multiverse
 
-deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
-#deb-src http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
-#deb-src http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+## 21.04
+deb http://de.archive.ubuntu.com/ubuntu hirsute main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu hirsute-updates main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu hirsute-security main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu hirsute-backports main restricted universe multiverse
 
-clean http://archive.ubuntu.com/ubuntu
+## 20.04
+deb http://de.archive.ubuntu.com/ubuntu focal main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse
+deb http://de.archive.ubuntu.com/ubuntu focal-backports main restricted universe multiverse
+
+clean http://de.archive.ubuntu.com/ubuntu
