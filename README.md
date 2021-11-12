@@ -1,8 +1,5 @@
 # apt-mirror-http-server
 
-[![Docker Stars](https://img.shields.io/docker/stars/seterrychen/apt-mirror-http-server.svg)](https://hub.docker.com/r/seterrychen/apt-mirror-http-server/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/seterrychen/apt-mirror-http-server.svg)](https://hub.docker.com/r/seterrychen/apt-mirror-http-server/)
-
 Using Docker to construct your APT(Advanced Packaging Tools) mirror HTTP server.
 
 ## Usage
@@ -19,10 +16,15 @@ docker run -d \
 
 ### More options with docker command
 
-* `-v /path/your/mirror.list:/etc/apt/mirror.list`: to replace [Ubuntu default mirror.list](https://github.com/seterrychen/apt-mirror-http-server/blob/master/mirror.list)
+* `-v /path/your/mirror.list:/etc/apt/mirror.list`: to replace my mirror.list
 * `-e RESYNC_PERIOD=timeout-value`: to set the resync period, default is 12 hours. To set the [TIMEOUT format description](http://www.cyberciti.biz/faq/linux-unix-sleep-bash-scripting/)
 
 ## Changelog
+
+* 2021-11-12: version 0.1.3
+  * forked original repo
+  * updated to newest ubuntu base image
+  * updated mirror.list to the last three version
 
 * 2017-07-27: version 0.1.2
   * Fix the container started twice: "httpd (pid 13) already running"
