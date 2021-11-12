@@ -6,7 +6,7 @@ ENV RESYNC_PERIOD 12h
 
 RUN apt-get update \
   && apt-get install --no-install-recommends -y apt-mirror apache2 \
-  && rm /etc/apt/mirror.list \
+  && mv /etc/apt/mirror.list / \
   && apt-get autoclean \
   && rm -rf /var/lib/apt/lists/*
 
