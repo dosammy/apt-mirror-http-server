@@ -23,8 +23,8 @@ docker run -d \
 
 * 2021-11-12: version 0.1.3
   * forked original repo
-  * updated to newest ubuntu base image
-  * updated mirror.list to the last three version
+  * Update base image to Ubuntu 21.10
+  * Update mirror.list to the last three version
 
 * 2017-07-27: version 0.1.2
   * Fix the container started twice: "httpd (pid 13) already running"
